@@ -4,3 +4,25 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	position: static;
+}
+
+.intro.part-1 {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	background-color: aquamarine;
+	clip-path: polygon(0.00% 47.34%, 0.00% 0.00%, 100.00% 0.00%, 100.00% 47.34%, 49.60% 36.81%, 49.60% 57.76%, 0.00% 47.34%);
+}
+
+.intro.part-2 {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	background-color: aquamarine;
+	clip-path: polygon(0.00% 100.00%, 0.00% 47.34%, 49.60% 57.76%, 49.60% 36.81%, 100.00% 47.34%, 100.00% 100.00%, 0.00% 100.00%);
+}
