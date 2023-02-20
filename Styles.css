@@ -61,3 +61,27 @@ body {
 	animation: slide-out-2 2s;
 	animation-fill-mode: forwards;
 }
+
+#header {
+	position: absolute;
+	z-index: 1;
+	width: 60%;
+	height: 300px;
+	background-color: #AF38FF;
+}
+
+#form {
+	position: relative;
+	width: 50%;
+	min-height: 100px;
+	background-color: antiquewhite;
+	z-index: 2;
+}
+
+#result {
+	position: relative;
+	top: 0;
+	width: 50%;
+	height: 100px;
+	z-index: 3;
+}
