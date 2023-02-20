@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 948.16 245.95">
+  <defs>
+    <style>
+      .e {
+        fill: none;
+        font-family: MalgunGothic-Semilight, 'Malgun Gothic';
+        font-size: 72px;
+        font-weight: 300;
+        stroke: #d1ceb5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="b">
+    <g id="d" data-name="c">
+      <text class="e" transform="translate(78.68 83.46) rotate(40.59)"><tspan x="0" y="0">K</tspan></text>
+      <text class="e" transform="translate(117.1 115.99) rotate(36.46)"><tspan x="0" y="0">o</tspan></text>
+      <text class="e" transform="translate(159.47 146.78) rotate(31.8)"><tspan x="0" y="0">n</tspan></text>
+      <text class="e" transform="translate(203.27 173.69) rotate(25.85)"><tspan x="0" y="0">w</tspan></text>
+      <text class="e" transform="translate(260.23 200.16) rotate(18.97)"><tspan x="0" y="0">e</tspan></text>
+      <text class="e" transform="translate(306.61 215.18) rotate(13.04)"><tspan x="0" y="0">r</tspan></text>
+      <text class="e" transform="translate(341.31 222.69) rotate(7.73)"><tspan x="0" y="0">t</tspan></text>
+      <text class="e" transform="translate(375.68 227.12) rotate(.87)"><tspan x="0" y="0">e</tspan></text>
+      <text class="e" transform="translate(424.5 226.69) rotate(-5.21)"><tspan x="0" y="0">r</tspan></text>
+      <text class="e" transform="translate(458.46 223.28) rotate(-8.11)"><tspan x="0" y="0"> </tspan></text>
+      <text class="e" transform="translate(487.33 218.96) rotate(-10.43)"><tspan x="0" y="0"> </tspan></text>
+      <text class="e" transform="translate(515.84 213.55) rotate(-12.46)"><tspan x="0" y="0"> </tspan></text>
+      <text class="e" transform="translate(544.27 207.2) rotate(-14.66)"><tspan x="0" y="0">c</tspan></text>
+      <text class="e" transform="translate(584.73 196.33) rotate(-16.47)"><tspan x="0" y="0">l</tspan></text>
+      <text class="e" transform="translate(608.17 189.3) rotate(-17.67)"><tspan x="0" y="0">i</tspan></text>
+      <text class="e" transform="translate(631.18 182.04) rotate(-19.34)"><tspan x="0" y="0">p</tspan></text>
+      <text class="e" transform="translate(677.68 165.49) rotate(-21.06)"><tspan x="0" y="0">-</tspan></text>
+      <text class="e" transform="translate(711.94 152.28) rotate(-22.61)"><tspan x="0" y="0">p</tspan></text>
+      <text class="e" transform="translate(757.49 133.15) rotate(-24.15)"><tspan x="0" y="0">a</tspan></text>
+      <text class="e" transform="translate(797.82 114.91) rotate(-25.31)"><tspan x="0" y="0">t</tspan></text>
+      <text class="e" transform="translate(825.37 101.89) rotate(-26.47)"><tspan x="0" y="0">h</tspan></text>
+    </g>
+  </g>
+</svg>
