@@ -108,7 +108,7 @@ form input {
 	/*	top: 0;*/
 	width: 30%;
 	height: 100px;
-	z-index: 3;
+	z-index: 4;
 	border: 4px solid #B83880;
 	color: #D915AE;
 	background-color: #EC8484;
