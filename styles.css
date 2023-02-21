@@ -1,3 +1,4 @@
+@import url("webfonts/ShantellSans_LightItalic/stylesheet.css");
 *,
 *::before,
 *::after {
@@ -8,23 +9,29 @@
 body {
 	width: 100vw;
 	height: 100vh;
-	position: relative;
 	overflow: hidden;
+	background-color: #131418;
 }
 
 main {
 	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
 	position: absolute;
+	background-image: linear-gradient(90deg, rgba(19,20,24,1.00) 0%, rgba(19,20,24,1.00) 25%, transparent 25%, transparent 100%) ,linear-gradient(0deg,#2c303b 0%,#2c303b 40.93%,rgba(30,30,38,1.00) 40.93%,rgba(30,30,38,1.00) 100%);
 	width: 100%;
 	height: 100%;
+	align-items: center;
+	justify-items: center;
+	background-color: #2c303b;
+	margin: 00px;
 }
 
-.intro.part-1 {
+.intro.part1 {
 	position: absolute;
-/*	z-index: 5;*/
-	width: 100%;
-	height: 100%;
-	transition: 2s cubic-bezier(.42, 0, .45, 1.03);
+	top: 00px;
+	z-index: 6;
+	width: 100vw;
+	transition: 1s cubic-bezier(.42, 0, .45, 1.03);
 }
 
 @keyframes slide-out-1 {
@@ -34,21 +41,24 @@ main {
   }
   100% {
     opacity: 1;
-    transform: translate(-200px, -100%);
+    transform: translate(-200px, -150%) scale(2.0);
   }
 }
 
-.intro.part-1.slide-out-1 {
+.intro.part1.slide-out-1 {
 	animation: slide-out-1 2s;
 	animation-fill-mode: forwards;
 	
 }
 
-.intro.part-2 {
+.intro.part2 {
 	position: absolute;
-/*	z-index: 5;*/
-	width: 100%;
-	min-height: 100%;
+	z-index: 6;
+	width: 103vw;
+	bottom: 18%;
+	padding-right: 0px;
+	right: -2%;
+	transition: 1s cubic-bezier(.42, 0, .45, 1.03);
 }
 	
 @keyframes slide-out-2 {
@@ -58,45 +68,138 @@ main {
 	}
   100% {
     opacity: 1;
-    transform: translate(200px, 100%);
+    transform: translate(200px, 160%) scale(2.0);
 	}
 }
 
-.intro.part-2.slide-out-2 {
+.intro.part2.slide-out-2 {
 	animation: slide-out-2 2s;
 	animation-fill-mode: forwards;
 }
 
+.text-start {
+	position: absolute;
+	z-index: 7;
+	width: 44%;
+	left: 4%;
+	top: 49%;
+}
+
+@keyframes text-won {
+	0% {
+	position: absolute;
+	z-index: 7;
+	width: 44%;
+	left: 4%;
+	top: 49%;
+	}
+/*
+	50% {
+	position: absolute;
+	z-index: 7;
+	width: 45%;
+	left: 20%;
+	top: 23%;
+	transform: rotate(-53deg);
+	}
+*/
+  100% {
+	position: absolute;
+	z-index: 7;
+	width: 45%;
+	left: 26%;
+	top: -69%;
+	transform: rotate(-130deg);
+	}
+}
+
+.text-end {
+	animation: text-won 2s;
+	animation-fill-mode: forwards;
+}
+
 #form {
+	grid-column: 2;
 	position: relative;
 	width: 50%;
-	min-height: 100px;
-	background-color: antiquewhite;
+	min-width: 200px;
+	min-height: 439px;
 	z-index: 2;
-	border-radius: 0 0 100% 0;
+	border-radius: 0 7px 100% 0;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,0.00) 2%,rgba(69,72,87,1.00) 2%,rgba(69,72,87,1.00) 100%), linear-gradient(90deg, #48cf72 0%, #fedd40 100%);
+	-webkit-box-shadow: inset 0px 0px;
+	box-shadow: inset 0px 0px;
+	font-family: "ShantellSans LightItalic";
 }
 
 form input {
 	width: 200px;
-	height: 40px;
+	height: 44px;
+}
+#form #polygonPoints {
+	border-bottom-right-radius: 77px 128px;
+	width: 95%;
+	border-color: #D92E31;
+	border-width: 0px;
+}
+#form #viewBoxWidth {
+	border-bottom-right-radius: 82px 88px;
+	width: 89%;
+	border-width: 0px;
+	margin-bottom: -20px;
+}
+#form #viewBoxHeight {
+	width: 76%;
+	border-bottom-right-radius: 72px 57px;
+	border-width: 0px;
+	margin-top: 0px;
+}
+#form #button {
+	width: 55%;
+	border-bottom-right-radius: 82px 55px;
+	border-width: 6px;
+	padding-bottom: 1%;
+}
+
+#form input {
+	width: 72%;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	border-style: solid;
+	border-color: #FF2FB6;
+	font-family: "ShantellSans LightItalic";
+	padding-right: 51px;
+}
+#form label {
+	margin-left: 2px;
+	margin-top: -10px;
+
 }
 
 #result {
+	transform: translateX(100%);
+	transition: 3s cubic-bezier(.7, .09, .41, .99);
+
+}
+
+#result.wjazd {
 	display: grid;
 	align-items: center;
 	text-align: center;
-	position: absolute;
-	align-self: center;
-	justify-self: center;
+	position: relative;
 	/*	top: 0;*/
-	width: 30%;
-	height: 100px;
+	width: 59%;
+	height: 70px;
 	z-index: 4;
-	border: 4px solid #B83880;
-	color: #D915AE;
-	background-color: #EC8484;
+	border: 4px solid #F02899;
+	color: #FFC1F1;
+	background-color: #E76767;
+	border-radius: 60px;
+	top: 15px;
+	font-family: "ShantellSans LightItalic";
+	transform: translateX(0);
 }

@@ -34,5 +34,7 @@ function handleSubmit(event) {
     //const resultDiv = return(polygonPointsPercent);
     //document.getElementById("result").innerHTML = resultDiv;
     document.getElementById("result").innerHTML = polygonPointsPercent;
+	let element_1 = document.getElementById("result");
+	element_1.classList.add('wjazd');
 //    event.preventDefault(); // zapobiega przeładowaniu strony po wysłaniu formularza
 }
