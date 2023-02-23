@@ -1,4 +1,6 @@
-@import url("webfonts/ShantellSans_LightItalic/stylesheet.css");
+@import url("webfonts/Courgette_Regular/stylesheet.css");
+@import url("webfonts/Cinzel_Regular/stylesheet.css");
+
 *,
 *::before,
 *::after {
@@ -17,15 +19,18 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 2fr 2fr 1fr;
 	position: absolute;
-	background-image: linear-gradient(90deg, rgba(19,20,24,1.00) 0%, rgba(19,20,24,1.00) 25%, transparent 25%, transparent 100%) ,linear-gradient(0deg,#2c303b 0%,#2c303b 40.93%,rgba(30,30,38,1.00) 40.93%,rgba(30,30,38,1.00) 100%);
+	background-image: url("images/leaf.jpg");
+	background-position: center;
 	width: 100%;
 	height: 100%;
 	align-items: center;
 	justify-items: center;
 	background-color: #2c303b;
 	margin: 00px;
+	max-width: 1920px;
 }
 
+/*
 .intro.part1 {
 	position: absolute;
 	top: 00px;
@@ -50,7 +55,9 @@ main {
 	animation-fill-mode: forwards;
 	
 }
+*/
 
+/*
 .intro.part2 {
 	position: absolute;
 	z-index: 6;
@@ -76,7 +83,9 @@ main {
 	animation: slide-out-2 2s;
 	animation-fill-mode: forwards;
 }
+*/
 
+/*
 .text-start {
 	position: absolute;
 	z-index: 7;
@@ -93,7 +102,6 @@ main {
 	left: 4%;
 	top: 49%;
 	}
-/*
 	50% {
 	position: absolute;
 	z-index: 7;
@@ -102,7 +110,6 @@ main {
 	top: 23%;
 	transform: rotate(-53deg);
 	}
-*/
   100% {
 	position: absolute;
 	z-index: 7;
@@ -117,52 +124,57 @@ main {
 	animation: text-won 2s;
 	animation-fill-mode: forwards;
 }
+*/
+
+#form::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,0.00) 1.5%,rgba(112,221,255,1.00) 1.5%,rgba(112,234,255,1.00) 98.5%, rgba(255,255,255,0.00) 98.5%,rgba(255,0,0,0.00) 100%), linear-gradient(75deg, #48cf72 0%, #fedd40 100%);
+	z-index: -1;
+	filter: opacity(0.35);
+	border-radius: 5px;
+	backdrop-filter: blur(8px);
+}
 
 #form {
-	grid-column: 2;
+	grid-column: 2 / 4;
 	position: relative;
 	width: 50%;
 	min-width: 200px;
 	min-height: 439px;
 	z-index: 2;
-	border-radius: 0 7px 100% 0;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,0,0,0.00) 2%,rgba(69,72,87,1.00) 2%,rgba(69,72,87,1.00) 100%), linear-gradient(90deg, #48cf72 0%, #fedd40 100%);
-	-webkit-box-shadow: inset 0px 0px;
-	box-shadow: inset 0px 0px;
-	font-family: "ShantellSans LightItalic";
+	font-family: "Cinzel Regular";
+	font-size: 18px;
 }
 
 form input {
-	width: 200px;
 	height: 44px;
 }
 #form #polygonPoints {
-	border-bottom-right-radius: 77px 128px;
 	width: 95%;
 	border-color: #D92E31;
 	border-width: 0px;
 }
 #form #viewBoxWidth {
-	border-bottom-right-radius: 82px 88px;
 	width: 89%;
 	border-width: 0px;
-	margin-bottom: -20px;
 }
 #form #viewBoxHeight {
 	width: 76%;
-	border-bottom-right-radius: 72px 57px;
 	border-width: 0px;
 	margin-top: 0px;
 }
 #form #button {
 	width: 55%;
-	border-bottom-right-radius: 82px 55px;
-	border-width: 6px;
-	padding-bottom: 1%;
+	border-width: 3px;
 }
 
 #form input {
@@ -171,12 +183,9 @@ form input {
 	box-shadow: 0px 0px;
 	border-style: solid;
 	border-color: #FF2FB6;
-	font-family: "ShantellSans LightItalic";
-	padding-right: 51px;
+	background-color: rgba(89,187,149,0.75);
 }
 #form label {
-	margin-left: 2px;
-	margin-top: -10px;
 
 }
 
@@ -191,15 +200,6 @@ form input {
 	align-items: center;
 	text-align: center;
 	position: relative;
-	/*	top: 0;*/
-	width: 59%;
-	height: 70px;
-	z-index: 4;
-	border: 4px solid #F02899;
-	color: #FFC1F1;
-	background-color: #E76767;
-	border-radius: 60px;
-	top: 15px;
-	font-family: "ShantellSans LightItalic";
 	transform: translateX(0);
+	
 }
